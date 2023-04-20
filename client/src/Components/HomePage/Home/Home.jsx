@@ -81,7 +81,7 @@ const Home = () => {
                             <Cards 
                             key={game.id} 
                             id={game.id}
-                            img = {game.background_image} 
+                            img={game.background_image} 
                             name={game.name}
                             genres={game.genres}
                             rating={game.rating}
