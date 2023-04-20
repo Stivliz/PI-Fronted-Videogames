@@ -13,7 +13,6 @@ import axios from 'axios';
 /*Cuando queramos actualizar nuestro deploy usaremos esta URL. */
 axios.defaults.baseURL = "https://pi-backend-videogames-production.up.railway.app/"
 
-
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
