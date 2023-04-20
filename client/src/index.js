@@ -5,6 +5,14 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './Redux/Store';
+import axios from 'axios';
+
+/*Cuando queramos trabajar de forma local, vamos a descomnetar el localhost.*/ 
+// axios.defaults.baseURL = "http://localhost:3001" 
+
+/*Cuando queramos actualizar nuestro deploy usaremos esta URL. */
+axios.defaults.baseURL = "https://pi-backend-videogames-production.up.railway.app/"
+
 
 ReactDOM.render(
   <Provider store={store}>
